@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { RomanticSurprisePage } from './components/RomanticSurprisePage';
 import { FilmySlideShow } from './components/FilmySlideShow';
 import { FallingHeartsBackground } from './components/FallingHeartsBackground';
@@ -46,6 +47,9 @@ export default function App() {
 
   return (
     <div className="relative min-h-[100dvh] w-full bg-gradient-to-b from-[#18030b] via-[#240410] to-[#120107] text-rose-100 flex flex-col font-sans select-none overflow-x-hidden overflow-y-auto">
+      {/* Vercel Web Analytics Tracking */}
+      <Analytics />
+
       {/* Background Animated Falling Hearts Particles */}
       <FallingHeartsBackground />
 
