@@ -1,0 +1,190 @@
+import { StrategyOption, ChatReplyBranch } from '../types';
+
+export const TIMELINE_EVENTS = [
+  {
+    date: '21 Sep (Afternoon)',
+    title: 'Frustrated Attack Message',
+    detail: '"tujhe itni samajh hi nhi hai kisi ke effort orr time ki respect kese krte hai"',
+    type: 'negative',
+    impact: 'Created severe defensive reaction and guilt wall.',
+  },
+  {
+    date: '21 Sep (Evening)',
+    title: 'The 3 Dramatic Story Reels',
+    detail: '1. Guilty Conscience & Avoidance\n2. Built My Walls Higher\n3. Bad Dua / Karma / Bhagwan Sab Dekh Rha Hai',
+    type: 'critical',
+    impact: 'Madam felt publicly targeted and pressured by indirect passive-aggressive taunts.',
+  },
+  {
+    date: '22 Sep (Next Day)',
+    title: 'The Apology + Exit Door Trap',
+    detail: '"Madam wo msg galat tha Frustration mei mene tujhe unfair bol diya jabki tum par koi compulsion nhi hai Sorry Reply krne ki zaroorat nhi hai"',
+    type: 'warning',
+    impact: 'You apologized nicely BUT said "Reply krne ki zaroorat nhi hai", giving her an easy psychological escape to go silent without feeling rude.',
+  },
+  {
+    date: '27 Sep (Today - 6 Days Later)',
+    title: 'The Golden Reset Window',
+    detail: '6 days of complete silence has passed. The initial heat and anger have cooled off.',
+    type: 'positive',
+    impact: 'Optimal moment to break silence with a lighthearted hook, self-aware roast, or third-party cover-up.',
+  },
+];
+
+export const MASTER_STRATEGIES: StrategyOption[] = [
+  {
+    id: 'friend-drama-excuse',
+    title: 'The Best Friend / Cousin Drama Cover-Up',
+    category: 'excuse',
+    tag: 'Highest Believability (94%)',
+    believabilityScore: 94,
+    pressureScore: 2,
+    clickProbability: 95,
+    headline: 'Shift the 3 reels onto a friend’s messy breakup / betrayal',
+    bahanaStory: `This excuse explains why you posted 3 dramatic reels in one evening. You claim your friend/cousin was going through a crazy breakup/toxic scene with his ex, was with you, and those reels were posted during that friend-bonding venting session or from your phone. Then you casually mention you realized later how someone might misinterpret them.`,
+    messageText: `Hey Madam, ek ajeeb baat share karni thi... Us din (21 ko) mere dost ka uski ex ke sath full toxic kalesh chal raha tha, aur hum log bewakoofon ki tarah uske support me stories pe reels dump kar rahe the 😂\n\nPhir kal achanak mujhe strike hua ki kahi tune wo faltu stories apne pe toh nahi le li thi?! Kyunki mera wo din ka message bhi super immature tha. Hope you're doing good!`,
+    voiceNoteScript: `(Casual, slightly laughing, 12 seconds) "Hey Madam... listen, kal mujhe achanak ek cheez strike hui aur mujhe bohot hasi aayi. Us din mere dost ka na crazy breakup drama chal raha tha aur humne sarcastic reels story pe laga di thi. Baad me mujhe laga kahi tune wo sab apne pe toh nahi connect kar liya tha? Matlab mera wo message bhi over the top tha haha. Hope everything is chill with you!"`,
+    psychologyBreakdown: `Takes the target completely off her forehead. In her mind, she felt attacked by the karma and guilty-conscience reels. Giving her a plausible 3rd party story lets her drop her defenses without having to admit she was overthinking.`,
+    whenToUse: `Best if you want a clean, believable story that directly neutralizes the 3 reels.`,
+    howToFollowUp: `If she replies "Haha sach me? Mujhe laga mere liye tha", reply: "Arre bilkul nahi pagal! Mere dimaag me wo message bhejte hi guilt tha, stories toh alag hi zone me thi haha. Btw tera week kaisa raha?"`,
+  },
+  {
+    id: 'cringe-self-roast',
+    title: 'The Self-Deprecating "Cringe Roast" (Charismatic EQ)',
+    category: 'humor',
+    tag: 'Highest Attraction Recovery (97%)',
+    believabilityScore: 99,
+    pressureScore: 1,
+    clickProbability: 96,
+    headline: 'Own the melodrama with high-confidence humor',
+    bahanaStory: `Instead of making a complicated excuse she might suspect, you laugh off your own dramatic phase. You call yourself out for acting like a "2012 Daily Soap character" or "hyper-dramatic teenager". Girls find men who can laugh at their own temporary stupidity 10x more attractive and mature than men who send heavy apologies.`,
+    messageText: `Madam, ek honest baat bolu? Us din main itna dramatic behave kar raha tha ki abhi mujhe khud pe 10/10 second-hand embarrassment ho rahi hai 😂🤦‍♂️\n\nMatlab wo rude text aur upar se wo stories... lag raha tha koi 2012 ka Devdas internet pe bhatak gaya ho. It was pure cringe on my part. Just wanted to laugh it off and say sorry for being a temporary clown. Hope college/work is going great!`,
+    voiceNoteScript: `(Chuckle in voice, super relaxed tone) "Madam honestly ek baat bolu... Maine do din pehle socha ki main 21st ko kya harkat kar raha tha, and I swear mujhe khud pe itni embarrassment hui ki main bata nahi sakta 😂 Matlab direct Devdas mode on ho gaya tha mera. I just wanted to say sorry yaar wo bohot faltu melodrama tha. Hope you're doing good!"`,
+    psychologyBreakdown: `When you own your cringe before she can criticize you for it, you disarm all her anger. It takes zero effort for her to react with "Haha" or "Sach me bohot dramatic tha 😂". Once she laughs, the ice is broken.`,
+    whenToUse: `Best if you have a generally fun dynamic and you want to look confident and emotionally mature.`,
+    howToFollowUp: `If she replies "Haha sach me bohot cringe tha 😂", reply: "Award milna chahiye mujhe overacting ka 😂 Chalo glad you laughed. Ab penalty me coffee treat du ya normal ban jau?"`,
+  },
+  {
+    id: 'curiosity-hook',
+    title: 'The High-Curiosity Unfinished Hook (Guaranteed Click)',
+    category: 'curiosity',
+    tag: '99% Open & Read Rate',
+    believabilityScore: 92,
+    pressureScore: 2,
+    clickProbability: 99,
+    headline: 'A two-stage hook that creates an irresistible itch to know more',
+    bahanaStory: `Human psychology cannot resist an open question or an intriguing observation. By sending a light, intriguing 1-liner with zero anger and zero heavy emotional baggage, she will instinctively open the chat to satisfy her curiosity.`,
+    messageText: `Madam, can I tell you something funny? Kal ek aisi cheez hui jo dekh ke mujhe seedha tumhari yaad aayi aur mujhe laga tumse share karni chahiye... (lekin pehle confirm kar lo ki tum abhi bhi mujhse naraz ho ya emergency truce declare ho gaya hai? 🏳️)`,
+    voiceNoteScript: `(Playful, smiling tone, 10 seconds) "Madam, ek bohot funny cheez dekhi maine kal jo dekh ke mujhe seedha tumhari yaad aayi. Par pehle batao kya humare beech white flag truce hai ya abhi bhi ban chal raha hai? 😂"`,
+    psychologyBreakdown: `The human brain hates open loops (Zeigarnik effect). She will wonder: "What did he see? Why did he think of me?" Adding the playful white-flag joke acknowledges the tension without making it heavy or toxic.`,
+    whenToUse: `When you want an instant reply within 15 minutes and want to test her mood.`,
+    howToFollowUp: `If she replies "Kya dekha? Aur haan naraz toh thi thoda", send a funny meme/reel or related inside joke, then say: "Chalo truce accepted! Aur haan us din ke drama ke liye genuine sorry, I was just being dumb."`,
+  },
+  {
+    id: 'project-credit-excuse',
+    title: 'The Work / Group Project Betrayal Excuse',
+    category: 'excuse',
+    tag: 'Ethical & Realistic (89%)',
+    believabilityScore: 89,
+    pressureScore: 2,
+    clickProbability: 91,
+    headline: 'Attribute the reels to a backstabbing teammate or colleague',
+    bahanaStory: `Those reels mentioned karma, someone treating you wrong, and guilty conscience. This maps 100% realistically to a group project partner or workplace colleague taking credit or ditching at the last minute.`,
+    messageText: `Hey Madam! Kal mere ek friend ne mujhe yaad dilaya ki maine 21st ko kya ulti-seedhi reels post kari thi story pe 😂 Actually us din project me mere ek partner ne last moment pe presentation me dhoka diya tha toh I was fuming at 8 PM.\n\nPhir mujhe dhyan aaya ki mere us immature message ke baad tune kahi ye na soch liya ho ki wo tere liye tha! Just wanted to clear that out, wo office/project ka kalesh tha. Hope all good with you!`,
+    psychologyBreakdown: `Provides a logical, external enemy (the bad teammate). Her brain feels relief: "Oh, so he wasn't cursing me with karma, he was just stressed about work/college."`,
+    whenToUse: `Ideal if you both share an academic or professional circle where project stress is common.`,
+    howToFollowUp: `If she replies: "Oh achha, mujhe laga tu mujhe bol raha tha", reply: "Nahi re! Tu toh innocent spectator ban gayi mere gusse me. Next time main stories post karne se pehle 10 baar sochunga haha."`,
+  },
+  {
+    id: 'meme-icebreaker',
+    title: 'The Viral "Dramatic Guy" Meme Bridge',
+    category: 'humor',
+    tag: 'Zero-Pressure Visual (93%)',
+    believabilityScore: 95,
+    pressureScore: 1,
+    clickProbability: 94,
+    headline: 'Send a self-mocking meme or GIF that dissolves all tension',
+    bahanaStory: `Sometimes a picture is worth a thousand apologies. Sending a meme of someone acting overdramatic (like a dog wearing an oversized scarf, or a Bollywood actor making a dramatic face) with a 1-line caption breaks the awkward 6-day ice instantly.`,
+    messageText: `[Send a funny dramatic puppy / Bollywood overacting meme]\n\nCaption: "Me on 21st Sep after posting 3 philosophical reels vs Me today realizing nobody asked for my spiritual gyaan 😂🙏\n\nWhite flag truce Madam? 🏳️"`,
+    psychologyBreakdown: `Zero emotional friction. She doesn't have to formulate a serious reply. A single reaction emoji (😂) restarts the conversation naturally.`,
+    whenToUse: `If she loves memes or if text paragraphs usually make things awkward between you two.`,
+    howToFollowUp: `If she reacts with 😂 or "Lmao kya tha ye", reply: "Bas meri overacting ka saboot tha. Waise how was your weekend? Sab theek?"`,
+  },
+];
+
+export const REPLY_BRANCHES: ChatReplyBranch[] = [
+  {
+    trigger: 'Positive Humor ("Haha lol tu bhi na 😂" or "Sach me bohot dramatic tha")',
+    priyankaReply: 'Haha lol 😂 mujhe laga pata nahi kya ho gaya tha tujhe! Stories dekh ke to main shock thi sach me.',
+    yourNextMove: 'Match her light energy, lock in the truce, and casually transition to normal friendly life topic.',
+    sampleNextText: 'Main khud shock me tha agle din dekh ke ki maine kya post kiya tha 😂 Chalo glad you didn’t permanently block my dramatic self. Waise how was your week? Koi naya kalesh?',
+    dangerLevel: 'safe',
+  },
+  {
+    trigger: 'Relieved Clarification ("Oh achha, mujhe sach me laga mere liye tha")',
+    priyankaReply: 'Oh achha... sach bolu toh mujhe laga tu mujhe hi shade kar raha tha stories pe, isliye maine reply nahi kiya.',
+    yourNextMove: 'Validate her feeling gently ("bilkul valid tha tera sochna"), give a warm reassurance, and close the topic forever. Do not over-explain!',
+    sampleNextText: 'Honestly teri jagah main hota toh main bhi wahi sochta, so completely my fault for creating that confusion. Par ab clean slate hai! Hope college/work wasn’t too hectic this week?',
+    dangerLevel: 'safe',
+  },
+  {
+    trigger: 'Cold Short Reply ("Hmm theek hai" or "Okay koi baat nahi")',
+    priyankaReply: 'Hmm okay, koi baat nahi.',
+    yourNextMove: 'DO NOT PANIC. Do not send 5 more texts asking "Are you still mad?". Send one relaxed, high-value closing line and give it 24-48 hours.',
+    sampleNextText: 'Cool, just wanted to clear the air so no weird vibes remain. Take care! 👍',
+    dangerLevel: 'caution',
+  },
+  {
+    trigger: 'Skeptical / Direct Pushback ("Sach bol, wo mere liye hi tha na?")',
+    priyankaReply: 'Sach bol, wo stories tune mere liye hi dali thi na? Itna coincidence kaise ho sakta hai?',
+    yourNextMove: 'Use the "Half-Truth Diffuser" technique. Admit the mood was bad, but laugh off the specific reels as an absurd overreaction.',
+    sampleNextText: 'Honestly? Us din gussa toh tha tere reply na aane pe (jo maine accept kiya immature tha), par reels share karte waqt dimaag me dost ka scene bhi mix ho gaya tha. Bottom line ye hai ki I acted like a clown, aur mujhe samajh aa gaya. Ab tu judge karna band karegi ya abhi aur roast hona padega? 😜',
+    dangerLevel: 'caution',
+  },
+  {
+    trigger: 'Seen / Blue Tick but No Reply for 4 hours',
+    priyankaReply: '[Read at 4:32 PM - No immediate response]',
+    yourNextMove: 'ABSOLUTE LOCKDOWN. Do NOT send "?", do NOT unsend, do NOT view her profile 20 times. She is processing your sudden shift from needy/angry to calm/funny. Wait 48 hours.',
+    sampleNextText: '[NO MESSAGE TO SEND. Silence is your strength right now. Let the curiosity simmer.]',
+    dangerLevel: 'critical',
+  },
+];
+
+export const DOS_AND_DONTS = {
+  dos: [
+    {
+      title: 'Keep it Light & Low Pressure',
+      desc: 'She stayed silent because serious emotional confrontation feels exhausting. A light, funny message gives her a low-stakes way to reply.',
+    },
+    {
+      title: 'Own the Cringe Before She Mentions It',
+      desc: 'Calling yourself out ("main kitna dramatic behave kar raha tha") disarms her defensive wall instantly.',
+    },
+    {
+      title: 'Voice Note Advantage',
+      desc: 'If you have good rapport, a 10-15 second casual voice note works wonders because text loses tone, but your calm, smiling voice conveys zero toxicity.',
+    },
+    {
+      title: 'Respect the 6-Day Window',
+      desc: 'You gave it 6 days, which was good. Now enter like nothing is on fire. High value = unbothered, friendly, polite.',
+    },
+  ],
+  donts: [
+    {
+      title: 'NEVER Send Another Apology Paragraph',
+      desc: 'You already apologized on Sep 22. Apologizing twice makes you look guilty, insecure, and needy. One apology is enough.',
+    },
+    {
+      title: 'DO NOT Say "Mujhe pata hai tu mujhse nafrat karti hai"',
+      desc: 'Avoid victim mentality like the plague. It triggers instant cringe and disgust in women.',
+    },
+    {
+      title: 'NO Passive-Aggressive Sad Song Stories',
+      desc: 'Stop posting Arijit Singh heartbroken songs or cryptic quotes. Post something normal, fun, or a good coffee/workout story instead.',
+    },
+    {
+      title: 'DO NOT Double-Text Immediately',
+      desc: 'If she takes 3-4 hours to reply, stay chill. She wants to see if you will spiral again. Your calm response proves emotional maturity.',
+    },
+  ],
+};

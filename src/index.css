@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  user-select: none;
+  cursor: default !important;
+}
+
+* {
+  cursor: default;
+}
+
+button, a, [role="button"] {
+  cursor: pointer !important;
+}
+
+/* Ensure no text-caret (I-beam) cursor anywhere */
+p, span, h1, h2, h3, h4, h5, h6, div {
+  cursor: default !important;
+}
+
+/* Invisible Scroller: Scrollable without showing scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none !important; /* IE and Edge */
+  scrollbar-width: none !important; /* Firefox */
+}
+
+/* Apply hidden scrollbar globally to all elements with scrolling */
+*::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+* {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+

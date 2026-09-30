@@ -1,0 +1,6 @@
+{
+  "name": "Crush Rescue & Damage Control Strategist",
+  "description": "Tactical breakdown, psychological analysis, cover-up story excuses, and guaranteed click-worthy icebreaker templates to win back your crush.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
