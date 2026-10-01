@@ -33,7 +33,7 @@ Case: 9 din ka silence orr unknown IPC sections!`,
 orr frustration mei kuch zyada hi bol gya.
 Court ne kaha:  ye toh galat tha.’ 😂`,
     romanceShayari: `Charge Sheet: 21st Sep ka communication gap orr extra bolna.
-Verdict: Bhai, galti thi... no arguments on that! 🤦‍♂️☕`,
+Verdict: galti thi... no arguments on that! 🤦‍♂️☕`,
     emojiArt: '🕵️‍♂️ 📑 😂',
     bgColor: 'from-[#380e15] via-[#4d131f] to-[#1f050b]',
     borderColor: 'border-amber-500/50',
